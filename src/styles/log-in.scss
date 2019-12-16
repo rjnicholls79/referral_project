@@ -1,14 +1,46 @@
-h3 {
-  margin: 40px 0 0;
+@import "./universal.scss";
+
+@mixin sign-in-header(){
+  color: $blue;
+  font-family: $font;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  padding-top: 15px;
+  margin-bottom: 0px;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.signIn{
+  background: $white;
+  border-radius: 0px 0px 25px 25px;
+  box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.20);
+h2{
+@include sign-in-header();
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+.fa-chevron-down{
+  color: $orange;
+  padding-top: 7px;
+  padding-left: 7.5px;
 }
-a {
-  color: #42b983;
+.sign-arrow{
+  background: $white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.20);
+  position: relative;
+  top: 15px;
+}
+}
+
+.log-in{
+background: $white;
+color: $blue;
+padding: 25px 15px;
+width: 100%;
+h2{
+@include sign-in-header();
+}
 }

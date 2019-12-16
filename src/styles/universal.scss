@@ -1,0 +1,47 @@
+body{
+  background-image: linear-gradient(to bottom, #016ba8, #1c74af, #2c7db5, #3a86bc, #468fc2, #5396c7, #5f9ecd, #6aa5d2, #78add7, #85b5dd, #92bde2, #9fc5e8);
+  height: 100vh;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/****************************
+Colors
+*****************************/
+$blue: #016BA8;
+$white: #ffffff;
+$orange: #FFB715;
+
+/****************************
+END Colors
+*****************************/
+
+/****************************
+TYPOGRAPHY
+*****************************/
+$font: 'Montserrat', sans-serif;
+
+h1{
+  font-family: $font;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 5px;
+}
+
+/****************************
+END TYPOGRAPHY
+*****************************/
+
+.main-illustration{
+margin-top: 120px;
+}
+
+.logo{
+  margin-top: 25px;
+}
