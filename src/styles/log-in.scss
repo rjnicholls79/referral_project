@@ -11,10 +11,15 @@
   margin-bottom: 0px;
 }
 
-.signIn{
+@mixin sign-in-styles(){
   background: $white;
   border-radius: 0px 0px 25px 25px;
   box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.20);
+  margin-bottom: 70px;
+}
+
+.signIn{
+  @include sign-in-styles();
 h2{
 @include sign-in-header();
 }
@@ -32,15 +37,26 @@ h2{
   box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.20);
   position: relative;
   top: 15px;
+  cursor: pointer;
 }
 }
 
 .log-in{
-background: $white;
+@include sign-in-styles();
 color: $blue;
 padding: 25px 15px;
 width: 100%;
 h2{
 @include sign-in-header();
 }
+input{
+  display: block;
+}
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
