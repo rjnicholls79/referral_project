@@ -10,7 +10,8 @@
       <h2>please sign in</h2>
       <input type="input" placeholder="User Name">
       <input type="password" placeholder="Password">
-      <p>Lost Your Credentials</p>
+      <p class="lostCredentials">Lost Your Credentials</p>
+      <div class="mx-auto d-block log-arrow"><i class="fas fa-chevron-right"></i></div>
     </section>
   </transition>
   <section class="signIn" v-if="isShow['Sign']">
